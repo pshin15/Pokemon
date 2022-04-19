@@ -11,14 +11,20 @@ class Game:
         """Initializes Game object.
         """
     def Turn():
+        """Allows player to take turns
+        """
     def Attack():
         """Specifies method of attack.
         """
     def Surrender():
+        """Allows player to surrender
+        """
     def Health():
         """Displays a health/XP bar that changes based on attacks
         """
     def NextBattle():
+        """Allows users to continue playing and move up to the next battle
+        """
 
 
 class Monster:
@@ -29,10 +35,20 @@ class Monster:
         power (str): 
     """
     def __init__(self, name, power):
+        """Initializes Monster object
+        """
     def Player_monster():
+        """ Displays player's monsters
+        """
     def Computer_monster():
+        """Displays computer monsters
+        """
     def Player_Skill_list():
+        """Displays Players skill list
+        """
     def Monster_skill_list():
+        """Displays monsters skill list
+        """
 
 
 if __name__ == "__main__": 
