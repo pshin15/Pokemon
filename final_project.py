@@ -36,8 +36,8 @@ class Monster:
     """Class for the monster the user will fight against.
     
     Attributes:
-        name (str): 
-        power (str): 
+        name (str): name of the monster
+        power (str): specific power of the monster
     """
     def __init__(self, name, power):
         """Initializes Monster object
