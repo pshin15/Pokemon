@@ -4,8 +4,8 @@ class Game:
     """Steps for playing the game
     
     Attributes:
-        turns (int):
-        names (str): 
+        turns (int): The turns of the battles
+        names (str): The name of the player
     """
     def __init__(self, turns, names):
         """Initializes Game object.
@@ -13,10 +13,15 @@ class Game:
     def Turn():
         """Allows player to take turns
         """
-    def Attack():
+    def Attack(player,opponent,skill):
         """Specifies method of attack.
+
+        Args:
+            player (str): The player name
+            opponent (str): Opponent Name
+            skill (str): The name of the skill direct at the opponent
         """
-    def Surrender():
+    def Surrender(player):
         """Allows player to surrender
         """
     def Health():
