@@ -21,14 +21,11 @@ class Game:
             opponent (str): Opponent Name
             skill (str): The name of the skill direct at the opponent
         """
-    def Surrender(player):
+    def Surrender(player): #paula
         """Allows player to surrender
         """
-    def Health():
+    def Health(): #paula
         """Displays a health/XP bar that changes based on attacks
-        """
-    def NextBattle():
-        """Allows users to continue playing and move up to the next battle
         """
 
 
