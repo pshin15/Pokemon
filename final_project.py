@@ -21,12 +21,22 @@ class Game:
             opponent (str): Opponent Name
             skill (str): The name of the skill direct at the opponent
         """
-    def Surrender(player): #paula
+    def Surrender(self, player): 
         """Allows player to surrender
         """
-    def Health(): #paula
+        if self.hp_val == 0:
+            print(f"{self.names}, do you wish to continue?")
+            options = ["Yes", "No"]
+            x = random.choice(options)
+            for option in options:
+                if x == "Yes":
+                    continue
+                else:
+                    break
+    def Health():
         """Displays a health/XP bar that changes based on attacks
         """
+        print(self.health)
 
 
 class Monster:
