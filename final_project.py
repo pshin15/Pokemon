@@ -39,19 +39,36 @@ class Monster:
     def __init__(self, name, power):
         """Initializes Monster object
         """
-    def Player_monster():
+        self.name = name
+        self.power = power
+        
+    def Player_monster(self):
         """ Displays player's monsters
         """
-    def Computer_monster():
+        choice = random.randint(1,2)
+        self.player = choice - 1
+        
+    
+    def Computer_monster(player):
         """Displays computer monsters
         """
-    def Player_Skill_list():
+        choice = random.randint(1,2)
+        self.computer = choice - 1
+        
+       
+    def Player_Skill_list(self):
         """Displays Players skill list
         """
-    def Monster_skill_list():
+        player_skill_list = []
+        
+        return player_skill
+    
+    def Monster_skill_list(player):
         """Displays monsters skill list
         """
-
+        monster_skill_list = []
+        
+        return monster_skill
 
 if __name__ == "__main__": 
     args = parse_args(sys.argv[1:])
