@@ -40,6 +40,9 @@ class player:
     
     def select_skill(self):
         """Ask the user to select which skill to attack with
+        
+        Side Effects: 
+             Updating skills set
         """
         choice=int(input(f"Choose your skill to attack with:\n"
                     f"1({self.skill_list[0]}) or 2({self.skill_list[1]})\n"))
@@ -127,12 +130,16 @@ class game:
             game.surrender(p1)
             
     def monster_turn(self,monster,p1):
-        """Monster's turn to randomly select a skill and affect users health 
-        points
-        
+       """Starts the turn of computer player.
         Args:
-            monster (object): monster object
+            monster (object): opponent of player 1
             p1 (object): Player 1
+               
+        Side effects:
+            Prints what the player decides to use 
+        
+        Returns:
+             Prints the failing of damage dealt or lets player surrender.
         """
         monster.select_skill()
         dmg=monster.damage()
@@ -146,6 +153,9 @@ class game:
         Args:
             p1 (Object): Player 1
             p2 (Object): Player 2 (monster)
+            
+        Side Effects:
+            displays hp values in the terminal
         """
         print(f"\n------NEW HEALTH STATUS------\n"
               f"{p1.name}'s health = {p1.health}\n"
@@ -158,6 +168,9 @@ class game:
         Args:
             player (Object): Player 1
             opponent (Object): Opponent of player 1
+        
+        Return:
+            string: print out whether player wins or loses
         """
         if player.health <= 0 and opponent.health > 0:
             self.game_over = True
@@ -174,6 +187,10 @@ class game:
 
         Args:
             player (player): The player
+            
+        Return: 
+             bool: True if players choose to keep playing, otherwise False.
+         
         """
         options ="N"
         options = str(input(f"{player.name}, do you wish to surrender?(Yes or No)\n"))
