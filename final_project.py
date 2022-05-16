@@ -42,7 +42,7 @@ class player:
         """Ask the user to select which skill to attack with
         """
         choice=int(input(f"Choose your skill to attack with:\n"
-                         f"1({self.skill_list[0]}) or 2({self.skill_list[1]})\n"))
+                    f"1({self.skill_list[0]}) or 2({self.skill_list[1]})\n"))
         self.skill = self.skill_list[(choice-1)]
         
         
@@ -178,11 +178,10 @@ class game:
 def parse_args(arglist):
     """Parse command-line arguments.
     
-    Expect two required arguments (the names of two players).
+    Expect 3 user inputs (name of player, action taken, skill chosen).
     
     Returns:
-        namespace: a namespace with two attributes: name0 and name1, both
-        strings.
+        namespace: parsed arguments
     """
     parser = ArgumentParser(description='Begin playing the game')
     parser.add_argument('player', type=str, help="name of user")
@@ -214,4 +213,3 @@ if __name__ == "__main__":
     else:
         if nextBattle.lower() in ['n', 'no']:
             exit()        
-    
