@@ -1,75 +1,17 @@
-<<<<<<< HEAD
-from argparse import ArgumentParser
-import random
-import sys
-
-
-
-"""A turn based fantasy game that allows users to pick their character and power to fight against main monster"""
-=======
+from cgitb import reset
 import random
 from argparse import ArgumentParser
->>>>>>> 4146f610c050917ab3ad47dfa8023c56757269a8
 
 class player:
     """Creates a Player Class
     
     Attributes:
-<<<<<<< HEAD
-        names (list): 
-    """
-    def __init__(self):
-        """Initializes Game object.
-        
-        Side effects:
-            Sets the names attributes
-        """
-        self.names = ['Pikachu','Scizor','Snorlax','Ninetales','Squirtle','Charizard']
-        self.health = 100
-        self.hp_val = 20
-              
-    def Attack(self):
-        """Specifies method of attack.
-        """
-        
-        attack_method = int(input('choose attack method (attack - 1, special attack - 2)'))
-        hp_subtract_special= random.randint(2,6)
-        hp_subtract_normal = random.randint(1,3)
-        special_attack_damage = random.randint(8,30)
-        normal_attack_damage = random.randint(2,15)
-        if attack_method == 1:
-            self.hp_val-= hp_subtract_normal
-            self.health -= normal_attack_damage
-        elif attack_method == 2:
-            self.hp_val -= hp_subtract_special
-            self.health -= special_attack_damage
-        
-    def Turn(self,opponent):
-            """Allows player to take turns
-            """
-            player1 = input('Choose your character!(Pikachu,Scizor,Snorlax,Ninetales,Squirtle,Charizard)')
-            opponent = random.choice(self.names)
-            count = 0
-            
-         
-        
-    def Surrender():
-        """Allows player to surrender
-        """
-    def Health():
-        """Displays a health/XP bar that changes based on attacks
-        """
-    def NextBattle():
-        """Allows users to continue playing and move up to the next battle
-        """
-=======
         name (str): Name of the Player
         s1 (str): Skill 1 of the Player
         s2 (str): Skill 2 of the Player
     """
     def __init__(self,name,s1,s2):
         """Sets up the attributes of the player object
->>>>>>> 4146f610c050917ab3ad47dfa8023c56757269a8
 
         Args:
             name (str): Name of the Player
@@ -115,29 +57,8 @@ class monster(player):
     Args:
         player (Object): Player object
     """
-<<<<<<< HEAD
-    def __init__(self, name, power):
-        """Initializes Monster object
-        
-        Side effects:
-            Sets the name and power attributes
-        """
-    def Player_monster():
-        """ Displays player's monsters
-        """
-    def Computer_monster():
-        """Displays computer monsters
-        """
-    def Player_Skill_list():
-        """Displays Players skill list
-        """
-    def Monster_skill_list():
-        """Displays monsters skill list
-        """
-=======
     def __init__(self,name,s1,s2):
         """Sets the attributes of the player
->>>>>>> 4146f610c050917ab3ad47dfa8023c56757269a8
 
         Args:
             name (str): The name of the AI monster
@@ -262,6 +183,23 @@ class game:
             self.game_over = True
             print("Draw")
             
+    def hp_reset(self,player,opponent):
+        """Resets the hp value of the player once the round is over
+        
+        Args:
+            player(object): player object
+            opponent(onject): opponent of player 1
+            
+        Side effects:
+            modifies the health of the player
+            
+        """
+        while player.health > 0 and opponent.health <=0:
+            reset(player.health)
+        else:
+            player.health = player.health
+            
+                    
     def surrender(player):
         """Allow the user to exit the game or surrender
 
