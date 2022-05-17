@@ -14,9 +14,9 @@ Player is presented with two dungeons to enter. Once entering one of the dungeon
 get progressively stronger. 
 
 Classes:
--Player
--Game
--Monsters
+- Player
+- Game
+- Monsters
 
 Player class Method:
 -__init__()
