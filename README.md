@@ -1,5 +1,7 @@
 # Pokemon
+
 INST326 Final Project
+
 Our program is a turn based fantasy game. It starts with asking the players names. When it's the players turn,
 it gives them 2 options; attack or surrender. Then asks the user to choose their skill to attack with; sword slash 
 or sword dash. Once the player selects, the program displays both players and computer players' attacks and how much 
