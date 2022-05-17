@@ -63,12 +63,12 @@ Functions:
 - magic methods other than __init__()
  
 Sources:
-https://www.evennia.com/docs/latest/Turn-based-Combat-System.html 
-This source was used to see how a turn based combat system would look like. Wanted to see what combats and 
-rules we should include in our code.
+- https://www.evennia.com/docs/latest/Turn-based-Combat-System.html 
+  This source was used to see how a turn based combat system would look like. Wanted to see what combats and 
+  rules we should include in our code.
 
-https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html 
-This source was used to help with docstrings 
+- https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html 
+  This source was used to help with docstrings 
 
 
 
