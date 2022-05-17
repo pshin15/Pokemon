@@ -19,48 +19,48 @@ Classes:
 - Monsters
 
 Player class Method:
--__init__()
--damage()
--select_skills()
+- __init__()
+- damage()
+- select_skills()
 
 Game class methods:
--__init()
--__str__()
--turn()
--monster_turn()
--display_hp()
--check_win()
--hp_rest()
--surrender()
+- __init()
+- __str__()
+- turn()
+- monster_turn()
+- display_hp()
+- check_win()
+- hp_rest()
+- surrender()
 
 Attributes: turns, names
--__init__()
--Turn()
--Attack()
--Surrender()
--Health()
--NextBattle()
+- __init__()
+- Turn()
+- Attack()
+- Surrender()
+- Health()
+- NextBattle()
 
 Monster class methods:
--__init__()
--damage()
--select_skills()
+- __init__()
+- damage()
+- select_skills()
 
 Attributes: name, power
--__init__()
--Player_monster
--Computer_monster
--Player_Skill_list()
--Monster_skill_list()
+- __init__()
+- Player_monster
+- Computer_monster
+- Player_Skill_list()
+- Monster_skill_list()
 
 Functions:
--conditional expressions
--optional parameters and/or use of keyword arguments
--f-strings
--the ArgumentParser class
--set operations on sets or frozensets
--super()
--magic methods other than __init__()
+- conditional expressions
+- optional parameters and/or use of keyword arguments
+- f-strings
+- the ArgumentParser class
+- set operations on sets or frozensets
+- super()
+- magic methods other than __init__()
  
 Sources:
 https://www.evennia.com/docs/latest/Turn-based-Combat-System.html 
