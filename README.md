@@ -30,7 +30,7 @@ Game class methods:
 - monster_turn()
 - display_hp()
 - check_win()
-- hp_rest()
+- hp_reset()
 - surrender()
 
 Attributes: turns, names
