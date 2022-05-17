@@ -19,13 +19,13 @@ Classes:
 - Monsters
 
 Player class Method:
-- __init__()
+- __init()
 - damage()
 - select_skills()
 
 Game class methods:
 - __init()
-- __str__()
+- __str()
 - turn()
 - monster_turn()
 - display_hp()
@@ -34,7 +34,7 @@ Game class methods:
 - surrender()
 
 Attributes: turns, names
-- __init__()
+- __init()
 - Turn()
 - Attack()
 - Surrender()
@@ -42,12 +42,12 @@ Attributes: turns, names
 - NextBattle()
 
 Monster class methods:
-- __init__()
+- __init()
 - damage()
 - select_skills()
 
 Attributes: name, power
-- __init__()
+- __init()
 - Player_monster
 - Computer_monster
 - Player_Skill_list()
