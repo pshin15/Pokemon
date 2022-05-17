@@ -101,16 +101,16 @@ class game:
         self.p2=p2
         self.game_over=False
 
-    def start_dialogue(self,p1,opponent):
+    def __str__(self,p1,opponent):
         """Prints out a dialogue
         Args: 
             p1 (object): player 1 
             opponent (object): player 2
         
         Return:
-            print statement that starts a dialogue
+            str: print statement that starts a dialogue
         """
-        print(f"A wild enemy has apppeared\n")
+        return f"A wild enemy has apppeared\n"
         
     def turn(self,p1,opponent):
         """Starts the turns of P1. It gives user option to surrender or attack.
